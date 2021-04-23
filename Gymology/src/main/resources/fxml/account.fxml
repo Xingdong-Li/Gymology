@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+      prefWidth="600.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/16"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AccountController">
+    <children>
+        <Label fx:id="label" layoutX="98.0" layoutY="131.0" prefHeight="333.0" prefWidth="500.0" text="登录成功!"
+               textFill="#f50707">
+            <font>
+                <Font name="System Bold" size="16.0"/>
+            </font>
+        </Label>
+        <DatePicker layoutX="233.0" layoutY="239.0"/>
+    </children>
+</Pane>

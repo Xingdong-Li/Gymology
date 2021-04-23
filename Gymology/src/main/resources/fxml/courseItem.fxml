@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clickCourse" prefHeight="180.0" prefWidth="180.0" style="-fx-background-color: #3ba0da;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CourseItemController">
+   <children>
+      <ImageView fx:id="coursePic" fitHeight="180.0" fitWidth="218.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/健身.png" />
+         </image>
+      </ImageView>
+      <VBox layoutY="144.0" prefHeight="30.0" prefWidth="180.0">
+         <children>
+            <HBox prefHeight="30.0" prefWidth="180.0">
+               <children>
+                  <Label fx:id="courseSort" prefHeight="30.0" prefWidth="90.0" text="增肌">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="courseTime" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="90.0" text="10:14" textOverrun="WORD_ELLIPSIS">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="courseName" prefHeight="30.0" prefWidth="180.0" text="10天快速增肌100多斤一拳打死一头牛！">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="courseVip" layoutX="8.0" prefHeight="22.0" prefWidth="32.0" text="vip" />
+      <Button fx:id="functionBtn" layoutX="125.0" layoutY="-5.0" mnemonicParsing="false" onAction="#clickButton" onMouseEntered="#mouseIn" onMouseExited="#mouseOut" opacity="0.0" prefHeight="39.0" prefWidth="55.0" />
+   </children>
+</Pane>

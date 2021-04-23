@@ -1,0 +1,23 @@
+{
+  "1": {
+    "name": "健身到一拳打死三头牛",
+    "vip": "false",
+    "sort": "lose-weight",
+    "time": "10:1",
+    "picLocation": "/img/健身.png",
+    "videoLocation": "video/test.mp4"},
+  "2": {
+    "name": "能不能一拳打死你妈",
+    "vip": "true",
+    "sort": "muscle-building",
+    "time": "10:2",
+    "picLocation": "/img/健身.png",
+    "videoLocation": "video/God's Whisper.mp4"},
+  "3": {
+    "name": "单手举桌子",
+    "vip": "true",
+    "sort": "lose-weight",
+    "time": "10:3",
+    "picLocation": "/img/健身.png",
+    "videoLocation": "video/God's Whisper.mp4"}
+}
