@@ -22,10 +22,7 @@ public class HomeController implements Initializable {
     public void homeScene(){
         ControllerKeeper.get(MainController.class).getMainPane().setCenter(scene);
     }
-
-
-
-
+    
     public Parent getScene() {
         return scene;
     }
@@ -33,5 +30,4 @@ public class HomeController implements Initializable {
     public void setScene(Parent scene) {
         this.scene = scene;
     }
-
 }

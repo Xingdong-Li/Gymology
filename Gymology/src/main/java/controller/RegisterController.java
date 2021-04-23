@@ -20,7 +20,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * @author Dong
+ * @author Dong dong
  */
 public class RegisterController implements Initializable {
 

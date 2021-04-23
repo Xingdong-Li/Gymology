@@ -18,21 +18,16 @@ import java.util.ResourceBundle;
  */
 public class MainController implements Initializable {
     @FXML private BorderPane mainPane;
-
     @FXML public void homeScene() {
         ControllerKeeper.get(HomeController.class).homeScene();
     }
-
     @FXML private void courseScene() { ControllerKeeper.get(CourseController.class).courseScene(); }
-
     @FXML private void loginScene() {
         ControllerKeeper.get(LoginController.class).loginScene();
     }
-
     public BorderPane getMainPane() {
         return mainPane;
     }
-
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -45,8 +40,6 @@ public class MainController implements Initializable {
             FXMLLoader courseItemLoader = new FXMLLoader(RegisterController.class.getResource("/fxml/courseItem.fxml"));
             FXMLLoader coursePlayerLoader = new FXMLLoader(RegisterController.class.getResource("/fxml/coursePlayer.fxml"));
             FXMLLoader courseEditLoader = new FXMLLoader(RegisterController.class.getResource("/fxml/courseEdit.fxml"));
-
-
             Parent load;
 
             load = accountLoader.load();
