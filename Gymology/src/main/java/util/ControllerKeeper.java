@@ -33,25 +33,25 @@ public final class ControllerKeeper {
     public static <T> void reload(Class<T> clazz) throws IOException {
         FXMLLoader loader;
         if (clazz == AccountController.class){
-            loader = new FXMLLoader(AccountController.class.getResource("/controller/account.fxml"));
+            loader = new FXMLLoader(AccountController.class.getResource("/fxml/account.fxml"));
             Parent parent = loader.load();
             AccountController controller = loader.getController();
             controller.setScene(parent);
             put(AccountController.class,controller);
         }else if (clazz == HomeController.class){
-            loader = new FXMLLoader(HomeController.class.getResource("/controller/home.fxml"));
+            loader = new FXMLLoader(HomeController.class.getResource("/fxml/home.fxml"));
             Parent parent = loader.load();
             HomeController controller = loader.getController();
             controller.setScene(parent);
             put(HomeController.class,controller);
         }else if (clazz == LoginController.class){
-            loader = new FXMLLoader(LoginController.class.getResource("/controller/login.fxml"));
+            loader = new FXMLLoader(LoginController.class.getResource("/fxml/login.fxml"));
             Parent parent = loader.load();
             LoginController controller = loader.getController();
             controller.setScene(parent);
             put(LoginController.class,controller);
         }else if (clazz == RegisterController.class){
-            loader = new FXMLLoader(RegisterController.class.getResource("/controller/register.fxml"));
+            loader = new FXMLLoader(RegisterController.class.getResource("/fxml/register.fxml"));
             Parent parent = loader.load();
             RegisterController controller = loader.getController();
             controller.setScene(parent);

@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.layout.BorderPane;
+import model.Identity;
 import model.User;
 import util.ControllerKeeper;
 import util.MailUtil;
@@ -68,7 +69,7 @@ public class RegisterController implements Initializable {
                 prompt.setText("Select gender plz!");
             } else if (!validPhone(phoneText)) {
                 prompt.setText("Invalid phone number!");
-            } else if (!verifyCode.getText().equals(checkCode)) {
+            } else if (!verifyCode.getText().equalsIgnoreCase(checkCode)) {
                 prompt.setText("Incorrect check code!");
             } else {
                 User user = new User();
@@ -79,6 +80,7 @@ public class RegisterController implements Initializable {
                     user.setName(nameText);
                     user.setGender(genderValue);
                     user.setPhone(phoneText);
+                    user.setIdentity(Identity.Customer);
                     UserDataBase.add(user);
                     prompt.setText("");
                     ControllerKeeper.get(LoginController.class).loginScene("Register Successfully!");

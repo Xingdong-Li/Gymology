@@ -10,6 +10,16 @@ public class User {
 
     private String weight;
     private String height;
+    private Identity identity;
+    public Identity getIdentity() {
+        return identity;
+    }
+
+    public void setIdentity(Identity identity) {
+        this.identity = identity;
+    }
+
+    
 
     public String getUsername() {
         return username;

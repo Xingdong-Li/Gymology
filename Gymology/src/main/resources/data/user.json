@@ -1,28 +1,11 @@
 [ {
-  "username" : "user",
-  "password" : "123456",
-  "name" : "Xinyi",
-  "gender" : "Female",
-  "phone" : "19801320361",
-  "email" : "1020365598@qq.com",
-  "weight" : null,
-  "height" : null
-}, {
-  "username" : "Liberty Sheldon",
+  "username" : "黎兴东",
   "password" : "123123",
-  "name" : "lxd",
+  "name" : "Liberty",
   "gender" : "Male",
   "phone" : "15807711675",
-  "email" : "631999272@qq.com",
-  "weight" : null,
-  "height" : null
-}, {
-  "username" : "Liberty Sheldon",
-  "password" : "123123",
-  "name" : "123123",
-  "gender" : "Male",
-  "phone" : "12312312312",
   "email" : "631999273@qq.com",
   "weight" : null,
-  "height" : null
+  "height" : null,
+  "identity" : "Customer"
 } ]
